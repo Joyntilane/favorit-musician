@@ -1,0 +1,194 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px 40px;
+    top: 0;
+    left: 0;
+    width: inherit;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(151, 147, 147, 0.9);
+    color: #fff;
+  }
+
+  .em-logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .favMusician.albums-heading{
+    position: relative;
+    right: 400px;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .favMusician.videos-heading{
+    position: relative;
+    right: 100px;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .em-media{
+    display: flex;
+    position: relative;
+    left: 30%;
+  }
+
+  .em-media a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .back{
+    position: absolute;
+    float: left;
+    color: #000;
+    left: 15%;
+  }
+
+  .favMusician{
+    padding: 5px;
+    margin-left: 10px;
+    box-shadow: 2px 3px 5px #000;
+    font-size: 30px;
+    background-color: #000;
+  }
+
+  .listen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    background-image: linear-gradient(45deg, #f16767, pink);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .note{
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    left: 30px;
+    top: 145px;
+    color: #ff0000;
+  }
+
+  .albums{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #f16767, pink);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .albums a{
+      text-decoration: none;
+  }
+
+  .album-image{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    transition: 0.5s;
+  }
+
+  .album-image:hover{
+    width: 280px;
+    height: 280px;
+    box-shadow: 0.5px 1px 2px #ff0000;
+  }
+
+  iframe{
+    display: inline-block;
+    margin-left: 5px;
+    height: 350px;
+    width: 400px;
+    border-radius: 4px;
+    transition: 0.6s;
+  }
+
+  @media screen and (max-width: 900px) {
+    .favMusician.albums-heading{
+      position: relative;
+      right: 150px;
+      padding: 5px;
+      font-size: 30px;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .favMusician.videos-heading{
+    position: relative;
+    right: 10px;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .home{
+    position: absolute;
+    float: left;
+    color: #000;
+    left: 55%;
+    top: 100px;
+  }
+
+  .vids{
+    position: absolute;
+    float: left;
+    color: #000;
+    left: 10%;
+    top: 0px;
+    background-color: inherit;
+    box-shadow: none;
+    font-size: inherit;
+  }
+
+  .vids:hover{
+    opacity: 0.5;
+  }
+
+  iframe{
+    height: 125px;
+    width: 200px;
+  }
+}
