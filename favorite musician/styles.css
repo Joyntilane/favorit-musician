@@ -1,0 +1,249 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px 40px;
+    top: 0;
+    left: 0;
+    width: inherit;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(151, 147, 147, 0.9);
+    color: #fff;
+  }
+
+  img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  nav{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .favMusician{
+    padding: 5px;
+    box-shadow: 2px 3px 5px #000;
+    font-size: 30px;
+    background-color: #000;
+  }
+
+  .em-media{
+    display: flex;
+    position: relative;
+    left: 53%;
+  }
+
+  :is(.albums, .videos){
+    transition: 0.5s;
+  }
+
+  .em-media a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  :is(.albums, .videos):hover{
+    color: #000;
+    background-color: #ff0000;
+    cursor: pointer;
+  }
+
+  .media{
+    margin-left: 20px;
+    padding: 5px;
+    box-shadow: 2px 3px 5px #000;
+    font-size: 30px;
+    background-color: #000;
+  }
+
+  section{
+    padding: 5px;
+  }
+
+  .about-artist{
+    margin: 5px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #f16767, pink);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .about-artist-heading{
+    display: flex;
+    font-weight: normal;
+    margin: 5px auto;
+    font-size: 30px;
+    background-color: #000;
+    box-shadow: 0.5px 1px 2px #ff0000;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+  }
+
+  .latest-media{
+    display: flext;
+    margin: 5px;
+    padding: 10px;
+    background-image: linear-gradient(45deg, #f16767, pink);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .latest-media audio{
+    display: inline-block;
+    margin: 8px auto;
+    transition: 0.6s;
+  }
+
+  .artist-latest-media{
+    display: flex;
+    font-weight: normal;
+    margin: 15px auto;
+    font-size: 30px;
+    background-color: #000;
+    box-shadow: 0.5px 1px 2px #ff0000;
+    width: fit-content;
+    padding: 5px;
+    border: none;
+  }
+
+  :is(.about-artist, .latest-media){
+    transition: 0.8s;
+  }
+
+  :is(.about-artist, .latest-media):hover{
+    box-shadow: 0px 3px 5px rgb(8, 8, 8);
+  }
+
+  .latest-media iframe{
+    display: inline-block;
+    margin-left: 5px;
+    height: 350px;
+    width: 400px;
+    border-radius: 4px;
+    transition: 0.6s;
+  }
+
+  :is(audio, iframe):hover{
+    transform: scale(1.01);
+  }
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(151, 147, 147, 0.9);
+    color: #000;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
+    left: 0;
+    padding: 10px 40px;
+  }
+
+  footer .copy{
+    margin-left: 20px;
+  }
+
+  .footer-image{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 900px){
+    body{
+      overflow:auto;
+    }
+
+    header{
+      box-shadow: none;
+    }
+
+    .favMusician{
+      padding: 5px;
+      margin-left: 50px;
+      margin-bottom: 40px;
+      font-size: inherit;
+      width: max-content;
+    }
+
+    .em-media{
+      display: flex;
+      position: absolute;
+      float: left;
+      left: 225px;
+      top: 80px;
+    }
+
+    .media{
+      margin-left: 20px;
+      padding: 5px;
+      font-size: inherit;
+      background-color: inherit;
+      box-shadow: none;
+      color: #000;
+    }
+
+    .media:hover{
+      opacity: 0.5;
+      background-color: inherit;
+    }
+
+    .latest-media iframe{
+      height: 125px;
+      width: 200px;
+    }
+
+    footer{
+      display: flex;
+      align-items: center;
+      color: #ddd;
+      background: #393E46;
+      width: 100%;
+      position: absolute;
+      margin-bottom: 0;
+      left: 0;
+      padding: 10px 40px;
+    }
+
+    footer .copy{
+      margin-left: 20px;
+    }
+  
+    .footer-image{
+      display: none;
+    }
+  }
